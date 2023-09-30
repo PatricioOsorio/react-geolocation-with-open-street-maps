@@ -1,10 +1,24 @@
 import React from 'react';
-import MyMap from './Components/MyMap';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Main from './Components/Main';
 
 function App() {
   return (
     <>
-      <MyMap />
+      <div className="container">
+        <Header />
+      </div>
+
+      <main className="flex-shrink-0">
+        <div className="container">
+          <Main />
+        </div>
+      </main>
+
+      <footer className="d-block mt-auto py-3 bg-light">
+        <Footer />
+      </footer>
     </>
   );
 }
