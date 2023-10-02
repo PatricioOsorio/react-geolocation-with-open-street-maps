@@ -39,6 +39,10 @@ Nominatim utiliza datos de OpenStreetMap para encontrar ubicaciones en la Tierra
 1. Ejecutar el siguiente comando: `npm install`
 1. Ejecutar el siguiente comando: `npm run dev`
 
+## Ejemplo funcionando
+
+[Enlace del ejemplo ](https://patricioosorio.github.io/implementation-geolocation-with-open-street-maps/ 'Nominatim').
+
 <!-- ## Paquete
 
 ```bash
