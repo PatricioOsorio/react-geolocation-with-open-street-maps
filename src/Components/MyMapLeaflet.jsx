@@ -19,10 +19,8 @@ const MyMap = ({ lat = 0, lon = 0, zoom, endLat = null, endLon = null }) => {
     // Agrega el marcador al centro del mapa
     L.marker([parseFloat(lat), parseFloat(lon)]).addTo(map);
 
-    // Crea el control de enrutamiento
+    // Crea el control de enrutamiento, solo cuando hay coordenadas de la 2 ubicacion
     if (endLat !== null && endLon !== null) {
-      console.log('entra a la funcion');
-
       L.Routing.control({
         waypoints: [
           L.latLng(parseFloat(lat), parseFloat(lon)), // Punto de partida (latitud, longitud)
