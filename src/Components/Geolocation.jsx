@@ -84,7 +84,7 @@ const Geolocation = () => {
       </form>
 
       <form className="col-lg-6" onSubmit={handleSubmit}>
-        <div className="form-floating mb-3">
+        <div className="input-group mb-3">
           <input
             type="text"
             className="form-control"
@@ -93,11 +93,10 @@ const Geolocation = () => {
             name="search"
             onChange={(e) => setSearch(e.target.value)}
           />
-          <label htmlFor="floatingInput">Búsqueda</label>
+          <button className="btn btn-outline-primary" type="submit">
+            <i className="fas fa-search me-1"></i>Buscar
+          </button>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Buscar
-        </button>
       </form>
 
       <div className="row">
