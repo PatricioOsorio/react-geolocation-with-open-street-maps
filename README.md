@@ -50,29 +50,62 @@ Leaflet.js es una biblioteca independiente que se utiliza para la visualización
 
 ## Instalacion del proyecto actual
 
-1. Clonar el repositorio
+1. Clonar el repositorio, en la consola ejecutar el siguiente comando: `git clone [repositorio]`
 1. Abrir la consola de comandos en el directorio donde se encuentre el proyecto
-1. Ejecutar el siguiente comando: `npm install`
-1. Ejecutar el siguiente comando: `npm run dev`
+1. Para instalar las dependecias, Ejecutar el siguiente comando: `npm install`
+1. Para ejecutar el proyecto, ejecutar el siguiente comando: `npm run dev`
 
 ## Ejemplo funcionando
 
-[Enlace del ejemplo ](https://patricioosorio.github.io/implementation-geolocation-with-open-street-maps/ 'Website')
+[Enlace del ejemplo](https://patricioosorio.github.io/implementation-geolocation-with-open-street-maps/ 'Website')
 
+## Dependencias del proyecto
+
+- Bootstrap: `npm install bootstrap` (para los estilos del sitio)
+- Leaflet: `npm install leaflet` (para mostrar el mapa)
+- leaflet-routing-machine: `npm install leaflet-routing-machine` (para mostrar el mapa con la posibilidad de habilitar el enrutamiento por medio de coordenadas)
 
 ## Descripcion de los componentes usados
 
 ### main.jsx
 
+- Se importan los estilos de bootstrap y estilos personalizados
+- Se importa el componente App `App`
 
-<!-- ## Paquete
+### App.jsx
 
-```bash
-  npm install maptalks --save
-```
+- Se importan los componente del layout
+- Declara la inferfaz del sitio, con el `Header`, `Hero`, `Main` y `Footer`
 
-## Para google maps
+### Hedear.jsx
 
-```bash
-  react-geocode
-``` -->
+- Continene la estructura del Hedaer del sitio.
+
+### Hero.jsx
+
+- Continen informaicon general de la especificacion del sitio.
+
+### Footer.jsx
+
+- Footer del sitio web.
+
+### Main.jsx
+
+- Importa y muestra los componentes:
+  - `RoutingRoutes`: Componente para el trazado de rutas.
+  - `Geolocation`: Componente para la busqueda de ubicaciones.
+
+### RoutingRoutes.jsx
+
+- Tiene componentes de:
+- `SearchForm`: componente de busqueda con un formulario reutilizable.
+- `LocationList`: componente que muestra la lista de las locaciones encontradas.
+- `RoutingRoutes`: componente principal, con varios estados, manejador de formulario par su correcto funcionamiento, usando un helper personalizado para las peticiones Http. Tambien se renderiza el componente `MyMapLeaflet` con parametros definidos para mostrar el mapa.
+
+### Geolocation.jsx
+
+- Contiene estados para el manejo del formulario, contiene ubicaciones por defecto, y la posibilidad de que el usuario ingrese en un Input una busqueda personalizada. Tambien se renderiza el componente `MyMapLeaflet` con parametros definidos para mostrar el mapa.
+
+### MyMapLeaflet.jsx
+
+- Renderiza el mapa con la ubicacion o ubicaciones que se pasan por parametros.
