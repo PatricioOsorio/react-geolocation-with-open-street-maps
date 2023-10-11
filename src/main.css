@@ -1,3 +1,29 @@
-html{
+body {
   font-family: 'Poppins', sans-serif !important;
+  background-image: url('https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.text-gradient {
+  color: #4defa7;
+  background-image: -webkit-linear-gradient(
+    130deg,
+    #051937 0%,
+    var(--bs-primary) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
 }

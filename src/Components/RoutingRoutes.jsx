@@ -84,8 +84,8 @@ const RoutingRoutes = () => {
   };
 
   return (
-    <div className="row my-5 py-3 rounded shadow">
-      <h2>Actividad 2: Trazado de rutas</h2>
+    <div className="row my-5 p-3 rounded border shadow bg-white">
+      <h2 className='text-gradient fw-semibold fs-1 my-4 text-center'>Trazado de rutas</h2>
       <div className="col-lg-6">
         <SearchForm
           id="form-from"

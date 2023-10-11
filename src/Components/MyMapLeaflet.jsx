@@ -4,9 +4,13 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-routing-machine';
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 
+let mapIdCounter = 0;
+
 const MyMap = ({ lat = 0, lon = 0, zoom, endLat = null, endLon = null }) => {
+  const mapId = `map-${mapIdCounter++}`;
+
   useEffect(() => {
-    const map = L.map('my-map').setView(
+    const map = L.map(mapId).setView(
       [parseFloat(lat), parseFloat(lon)],
       zoom
     );
@@ -43,7 +47,7 @@ const MyMap = ({ lat = 0, lon = 0, zoom, endLat = null, endLon = null }) => {
   return (
     <div
       style={{ width: '100%', height: '100%', minHeight: '600px' }}
-      id="my-map"
+      id={mapId}
     ></div>
   );
 };

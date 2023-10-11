@@ -69,10 +69,10 @@ const Geolocation = () => {
   };
 
   return (
-    <div className="row my-5 py-3 rounded shadow">
-      <h2>Actividad 1: Geolocalizacion</h2>
+    <div className="row my-5 p-3 rounded border shadow bg-white">
+      <h2 className='text-gradient fw-semibold fs-1 my-4 text-center'>Implementación de servicios de Geolocalización</h2>
 
-      <form className="col-lg-6" onChange={handleChange}>
+      <form className="col-lg-6 mb-3" onChange={handleChange}>
         <div className="form-floating">
           <select className="form-select" id="defaults">
             {UBICATIONS.map((ubication) => (
@@ -83,7 +83,7 @@ const Geolocation = () => {
         </div>
       </form>
 
-      <form className="col-lg-6" onSubmit={handleSubmit}>
+      <form className="col-lg-6 mb-3" onSubmit={handleSubmit}>
         <div className="input-group mb-3">
           <input
             type="text"
@@ -100,8 +100,7 @@ const Geolocation = () => {
       </form>
 
       <div className="row">
-        <div className="col-lg-3 bg-light p-2">
-          <h2>Opciones</h2>
+        <div className="col-lg-3 bg-light rounded p-2 my-2">
           <div className="list-group">
             {ubications &&
               ubications.map((el) => (

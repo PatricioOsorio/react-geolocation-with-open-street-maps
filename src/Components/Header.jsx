@@ -1,10 +1,10 @@
 const Header = () => {
   return (
     <header
-      className="container-fluid bg-ligh"
+      className="container-fluid"
       style={{ marginBottom: '6rem' }}
     >
-      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow  py-4">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow  py-4 glass">
         <div className="container">
           <button
             className="navbar-toggler"
@@ -22,7 +22,7 @@ const Header = () => {
             id="navbarTogglerDemo01"
           >
             <div>
-              <a className="navbar-brand fw-bold ms-auto text-primary-emphasis" to="/">
+              <a className="navbar-brand fw-bold ms-auto text-primary-emphasis text-gradient" to="/">
                 WebName
               </a>
             </div>
