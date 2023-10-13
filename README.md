@@ -55,10 +55,6 @@ Leaflet.js es una biblioteca independiente que se utiliza para la visualización
 1. Para instalar las dependecias, Ejecutar el siguiente comando: `npm install`
 1. Para ejecutar el proyecto, ejecutar el siguiente comando: `npm run dev`
 
-## Ejemplo funcionando
-
-[Enlace del ejemplo](https://patricioosorio.github.io/implementation-geolocation-with-open-street-maps/ 'Website')
-
 ## Dependencias del proyecto
 
 - Bootstrap: `npm install bootstrap` (para los estilos del sitio)
