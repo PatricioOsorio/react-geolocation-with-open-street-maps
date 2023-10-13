@@ -62,6 +62,7 @@ Leaflet.js es una biblioteca independiente que se utiliza para la visualización
 ## Dependencias del proyecto
 
 - Bootstrap: `npm install bootstrap` (para los estilos del sitio)
+- Bootstrap: `npm install --save prop-types` (para declarar tipos en las propiedades de los componentes)
 - Leaflet: `npm install leaflet` (para mostrar el mapa)
 - leaflet-routing-machine: `npm install leaflet-routing-machine` (para mostrar el mapa con la posibilidad de habilitar el enrutamiento por medio de coordenadas)
 

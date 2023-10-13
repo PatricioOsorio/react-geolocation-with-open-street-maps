@@ -115,10 +115,10 @@ const RoutingRoutes = () => {
       <div className="col-12">
         {firstSelectedUbication && secondSelectedUbication && (
           <MyMapLeaflet
-            lat={firstSelectedUbication.lat}
-            lon={firstSelectedUbication.lon}
-            endLat={secondSelectedUbication.lat}
-            endLon={secondSelectedUbication.lon}
+            lat={parseFloat(firstSelectedUbication.lat)}
+            lon={parseFloat(firstSelectedUbication.lon)}
+            endLat={parseFloat(secondSelectedUbication.lat)}
+            endLon={parseFloat(secondSelectedUbication.lon)}
             zoom={parseFloat(firstSelectedUbication.place_rank) - 2}
           />
         )}

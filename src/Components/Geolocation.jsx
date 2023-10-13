@@ -70,7 +70,9 @@ const Geolocation = () => {
 
   return (
     <div className="row my-5 p-3 rounded border shadow bg-white">
-      <h2 className='text-gradient fw-semibold fs-1 my-4 text-center'>Implementación de servicios de Geolocalización</h2>
+      <h2 className="text-gradient fw-semibold fs-1 my-4 text-center">
+        Implementación de servicios de Geolocalización
+      </h2>
 
       <form className="col-lg-6 mb-3" onChange={handleChange}>
         <div className="form-floating">
@@ -120,7 +122,11 @@ const Geolocation = () => {
 
         <div className="col-lg-9">
           {boundingBox.length > 0 && (
-            <MyMapLeaflet lat={lat} lon={lon} zoom={zoom} />
+            <MyMapLeaflet
+              lat={parseFloat(lat)}
+              lon={parseFloat(lon)}
+              zoom={parseInt(zoom)}
+            />
           )}
         </div>
       </div>
